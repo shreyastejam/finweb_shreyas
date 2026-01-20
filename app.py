@@ -93,6 +93,20 @@ def slow_endpoint():
     return result
 
 
+@app.route('/slow-endpoint')
+def slow_endpoint():
+    if 'user' not in session:
+        return redirect(url_for('login'))
+
+    try:
+        response = requests.get(f"{BACKEND_API_BASE}/api/slow-endpoint")
+        result = response.text
+    except Exception as e:
+        result = {"error": str(e)}
+
+    return result
+
+
 @app.route('/logout')
 def logout():
     session.clear()
