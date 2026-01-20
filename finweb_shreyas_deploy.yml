@@ -11,7 +11,7 @@ variables:
   - name: artifactName
     value: 'frontend'        
   - name: targetFile
-    value: 'app.py'                             # Optional: Which file inside artifact to display
+    value: 'app.py'                             # Optional
   - name: resourceGroup
     value: 'Training-Student-023-OC012'        # <-- Update this
   - name: webAppName
