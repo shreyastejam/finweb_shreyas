@@ -7,7 +7,7 @@ variables:
   - name: projectName
     value: 'Training-Student-023-OC012'            # <-- Update this
   - name: buildPipelineName
-    value: 'finweb_shreyas_build.yml'          # <-- Update this
+    value: 'finweb_shreyas_build'          # <-- Update this
   - name: artifactName
     value: 'frontend'        
   - name: targetFile
